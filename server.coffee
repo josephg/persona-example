@@ -10,7 +10,7 @@ app.set 'views', 'views'
 app.set 'view engine', 'toffee'
 
 app.use express.favicon()
-app.use express.cookieParser 'internet123dfAFEeaj$@!'
+app.use express.cookieParser 'this should be a hard to guess super sekret password ermagherd'
 app.use express.session()
 app.use express.bodyParser()
 
