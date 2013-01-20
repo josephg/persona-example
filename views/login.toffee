@@ -1,10 +1,12 @@
 <!DOCTYPE HTML>
 <link rel="stylesheet" href="persona-buttons.css" />
 <a id="loginbtn" class="persona-button"><span>Sign in</span></a>
-Hi
+{# console.log 'oh hi', csrf #}
+Hisdfsdaf
 <script src="https://login.persona.org/include.js"></script>
 <form action='/auth' method='POST'>
   <input id='assfield' type='hidden' name='assertion' value='' />
+  <input type='hidden' name='_csrf' value='#{csrf}' />
 </form>
 <script>
   document.getElementById('loginbtn').onclick = function() {
