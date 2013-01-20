@@ -1,0 +1,27 @@
+{
+  "name": "persona-example",
+  "version": "0.0.0",
+  "description": "A simple integration of persona with an express-based multipage website",
+  "main": "server.coffee",
+  "dependencies": {
+    "express": "~3.0.6",
+    "request": "~2.12.0",
+    "toffee": "~0.0.59"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/josephg/persona-example.git"
+  },
+  "keywords": [
+    "persona",
+    "browserid",
+    "express",
+    "example"
+  ],
+  "author": "josephg@gmail.com",
+  "license": "BSD"
+}

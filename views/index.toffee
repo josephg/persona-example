@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<link rel="stylesheet" href="persona-buttons.css" />
+<div>
+  Hi #{email}
+</div>
+<button id='logoutbtn'>Sign out</button>
+<script src="https://login.persona.org/include.js"></script>
+{# c = (f) -> print "(#{f})();\n" #}
+<script>
+var email = #{json email};
+{#
+c () ->
+  logoutbtn.onclick = -> navigator.id.logout()
+
+  navigator.id.watch
+    loggedInUser:email
+    onlogin: -> window.location = '/login.html'
+    onlogout: -> window.location = '/logout'
+#}
+
+</script>
