@@ -1,8 +1,16 @@
 <!DOCTYPE HTML>
+<style>
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  color: #333;
+}
+</style>
 <link rel="stylesheet" href="persona-buttons.css" />
+<h1>
+  Oh hai.
+</h1>
 <a id="loginbtn" class="persona-button"><span>Sign in</span></a>
-{# console.log 'oh hi', csrf #}
-Hisdfsdaf
 <script src="https://login.persona.org/include.js"></script>
 <form action='/auth' method='POST'>
   <input id='assfield' type='hidden' name='assertion' value='' />

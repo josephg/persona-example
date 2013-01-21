@@ -1,8 +1,14 @@
 <!DOCTYPE HTML>
-<link rel="stylesheet" href="persona-buttons.css" />
-<div>
-  Hi #{email}
-</div>
+<style>
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  color: #333;
+}
+</style>
+<h1>
+Ermagherd its #{email}!
+</h1>
 <button id='logoutbtn'>Sign out</button>
 <script src="https://login.persona.org/include.js"></script>
 {# c = (f) -> print "(#{f})();\n" #}
