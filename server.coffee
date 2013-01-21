@@ -44,10 +44,9 @@ app.post '/auth', (req, res, next) ->
 
       return next(new Error data.reason) unless data.status is 'okay'
 
-      # Login worked. Session is regenerated to avoid fixation attacks.
-      req.session.regenerate ->
-        req.session.user = data.email
-        res.redirect '/'
+      # Login worked.
+      req.session.user = data.email
+      res.redirect '/'
 
 # / is restricted. If you use the restrict middleware, req.session.user will contain the
 # user's email address.
